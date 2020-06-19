@@ -1,4 +1,6 @@
 import React from "react";
+import "./Input.css";
+import PropTypes from "prop-types";
 export default class Input extends React.Component {
   constructor(props) {
     super(props);
@@ -6,19 +8,15 @@ export default class Input extends React.Component {
   }
 
   render() {
+    const { placeholderValue,inputType } = this.props;
     return (
       <div
-        style={{
-          display: "flex",
-          flex: 1,
-          paddingTop: 20,
-          fontSize: 30,
-          color: "red",
-        }}
+        className="Input"
       >
         <input
-          style={{ width: "100%", height: 40 }}
-          type="text"
+          className="Input-inputstyle"
+          type={inputType}
+          placeholder={placeholderValue}
           ref="task"
           //   onChange={onChangeText}
         />
@@ -26,3 +24,7 @@ export default class Input extends React.Component {
     );
   }
 }
+Input.propTypes = {
+  placeholderValue: PropTypes.string.isRequired,
+  inputType: PropTypes.string.isRequired,
+};

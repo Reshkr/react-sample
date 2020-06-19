@@ -1,0 +1,13 @@
+.Input {
+  padding-top: 20px;
+  font-size: 30px;
+  color: red;
+}
+.Input-inputstyle {
+  font-family: sans-serif;
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  color:grey;
+  padding:2px;
+}

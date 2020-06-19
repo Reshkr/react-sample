@@ -1,0 +1,18 @@
+.LoginPage {
+   min-height: 100vh; 
+   background-color: aquamarine;
+   background-image: url(../../images/header.jpg);
+   font-family: sans-serif;
+}  
+.LoginPage-loginback{
+   min-height: 100vh; 
+   background-color:rgba(250, 0, 0, 0.274);
+}
+.LoginPage-login{
+   padding-top: 200px;
+   padding-bottom: 70px;
+   color:white;
+   font-family: sans-serif;
+font-size: 40px;
+font-weight: bold;
+}

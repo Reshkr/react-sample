@@ -1,0 +1,13 @@
+.Button {
+  padding-top: 40px;
+  font-size: 30px;
+}
+.Button-buttonstyle {
+  width: 410px;
+  height: 50px;
+  font-family: sans-serif;
+  background-color:orangered;
+  font-size: 30px;
+  color: white;
+  border-color: orangered;
+}

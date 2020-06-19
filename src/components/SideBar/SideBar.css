@@ -1,0 +1,48 @@
+.SideBar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  bottom: 0;
+  width: 260px;
+  left: 0;
+  z-index: 1030;
+  background-color: rgb(255, 94, 0);
+}
+.SideBar-CT {
+  display: flex;
+  position: relative;
+  padding: 0.5rem 0.7rem;
+  z-index: 4;
+}
+.simple-text-logo-mini {
+  text-transform: uppercase;
+  padding: 0.5rem 0.7rem;
+  display: block;
+  white-space: nowrap;
+  font-size: 1em;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 30px;
+  overflow: hidden;
+}
+.simple-text-logo-normal {
+  text-transform: uppercase;
+  padding: 0.5rem 0.7rem;
+  display: block;
+  white-space: nowrap;
+  font-size: 1em;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 30px;
+  overflow: hidden;
+}
+.SideBar-linkstyle{
+    text-decoration: none;
+}
+.SideBar-textstyle{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}

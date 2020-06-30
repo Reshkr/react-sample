@@ -8,6 +8,7 @@ import Notifications from "./Notifications";
 import UserProfile from "./UserProfile";
 import TableList from "./TableList";
 import Typography from "./Typography";
+import UpgradeToPro from "./UpgradeToPro";
 const Main = () => (
   <main>
     <Switch>
@@ -19,6 +20,7 @@ const Main = () => (
       <Route exact path="/userprofile" component={UserProfile} />
       <Route exact path="/tablelist" component={TableList} />
       <Route exact path="/typography" component={Typography} />
+      <Route exact path="/upgradetopro" component={UpgradeToPro} />
     </Switch>
   </main>
 );

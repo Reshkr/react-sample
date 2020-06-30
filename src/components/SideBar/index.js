@@ -1,150 +1,85 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import { GrCube } from "react-icons/gr";
+// import "../../App.css";
 import "./SideBar.css";
-import {
-  AiOutlineHome,
-  AiOutlinePhone,
-  AiOutlineMeh,
-  AiOutlineTrademark,
-} from "react-icons/ai";
-
-class App extends Component {
+export default class SideBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     return (
-      <div className="SideBar">
-        <div className="SideBar-CT">
-          <a href="http://www.creative-tim.com" class="simple-text-logo-mini">
+      <div className="sidebar" data-color="orange">
+        <div className="logo">
+          <a
+            href="http://www.creative-tim.com"
+            className="simple-text logo-mini"
+          >
             CT
           </a>
-          <a href="http://www.creative-tim.com" class="simple-text-logo-normal">
+          <a
+            href="http://www.creative-tim.com"
+            className="simple-text logo-normal"
+          >
             Creative Tim
           </a>
         </div>
-        <div>
-         
-            <nav>
-              <Link to="maps" className="SideBar-linkstyle">
-                <div className="SideBar-textstyle">
-                  <AiOutlineHome
-                    style={{ fontSize: 25, color: "white", paddingTop: 20 }}
-                  />
-                  <div
-                    style={{
-                      flexDirection: "row",
-                      display: "flex",
-                      alignItems: "center",
-                      paddingTop: 10,
-                    }}
-                  >
-                    <div
-                      style={{
-                        fontSize: 23,
-                        color: "red",
-                        display: "flex",
-                        justifyContent: "flex-end",
-                        paddingTop: 4,
-                      }}
-                    />
-                    <h1
-                      style={{
-                        paddingTop: 10,
-                        paddingLeft: 20,
-                        fontSize: 15,
-                        color: "white",
-                      }}
-                    >
-                      sideBarName
-                    </h1>
-                  </div>
-                </div>
-              </Link>
+        <div className="sidebar-wrapper" id="sidebar-wrapper">
+          <ul className="nav">
+            <li className="active">
+              <Link to="dashboard" style={{ textDecoration: "none" }}>
+                <i className="now-ui-icons education_atom"></i>
 
-              <Link to="about" style={{ textDecoration: "none" }}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    paddingLeft: 20,
-                  }}
-                >
-                  <AiOutlineMeh
-                    style={{ fontSize: 25, color: "white", paddingTop: 20 }}
-                  />
-                  <div
-                    style={{
-                      flexDirection: "row",
-                      display: "flex",
-                      alignItems: "center",
-                      paddingTop: 10,
-                    }}
-                  >
-                    <div
-                      style={{
-                        fontSize: 23,
-                        color: "red",
-                        display: "flex",
-                        justifyContent: "flex-end",
-                        paddingTop: 4,
-                      }}
-                    />
-                    <h1
-                      style={{
-                        paddingTop: 10,
-                        paddingLeft: 20,
-                        fontSize: 15,
-                        color: "white",
-                      }}
-                    >
-                      sideBarName
-                    </h1>
-                  </div>
-                </div>
+                <p>Dashboard</p>
               </Link>
-              <Link to="contact" style={{ textDecoration: "none" }}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    paddingLeft: 20,
-                  }}
-                >
-                  <AiOutlinePhone
-                    style={{ fontSize: 25, color: "white", paddingTop: 20 }}
-                  />
-                  <div
-                    style={{
-                      flexDirection: "row",
-                      display: "flex",
-                      alignItems: "center",
-                      paddingTop: 10,
-                    }}
-                  >
-                    <div
-                      style={{
-                        fontSize: 23,
-                        color: "red",
-                        display: "flex",
-                        justifyContent: "flex-end",
-                        paddingTop: 4,
-                      }}
-                    />
-                    <h1
-                      style={{
-                        paddingTop: 10,
-                        paddingLeft: 20,
-                        fontSize: 15,
-                        color: "white",
-                      }}
-                    >
-                      sideBarName
-                    </h1>
-                  </div>
-                </div>
+            </li>
+            <li>
+              <Link to="icons" style={{ textDecoration: "none" }}>
+                <i className="now-ui-icons education_atom"></i>
+                <p>Icons</p>
               </Link>
-            </nav>
+            </li>
+            <li>
+              <Link to="maps" style={{ textDecoration: "none" }}>
+                <i className="now-ui-icons location_map-big"></i>
+                <p>Maps</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="notifications" style={{ textDecoration: "none" }}>
+                <i className="now-ui-icons ui-1_bell-53"></i>
+                <p>Notifications</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="userprofile" style={{ textDecoration: "none" }}>
+                <i className="now-ui-icons users_single-02"></i>
+                <p>User Profile</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="tablelist" style={{ textDecoration: "none" }}>
+                <i className="now-ui-icons design_bullet-list-67"></i>
+                <p>Table List</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="typography" style={{ textDecoration: "none" }}>
+                <i className="now-ui-icons text_caps-small"></i>
+                <p>Typography</p>
+              </Link>
+            </li>
+            <li class="active-pro">
+              <Link to="upgradetopro" style={{ textDecoration: "none" }}>
+                <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                <p>Upgrade to PRO</p>
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     );
   }
 }
-export default App;

@@ -6,22 +6,22 @@ import Button from "../../components/Button";
 
 class LoginPage extends Component {
   render() {
-  return (
-    <nav>
-      <div className="LoginPage">
-        <div className="LoginPage-loginback">
-          <div className="LoginPage-login">
-            <h>LOGIN</h>
+    return (
+      <nav>
+        <div className="LoginPage">
+          <div className="LoginPage-loginback">
+            <div className="LoginPage-login">
+              <h>LOGIN</h>
+            </div>
+            <Input placeholderValue="Username" inputType="text" />
+            <Input placeholderValue="Password" inputType="password" />
+            <Link to="dashboard" style={{ textDecoration: "none" }}>
+              <Button buttonText="SUBMIT" />
+            </Link>
           </div>
-          <Input placeholderValue="Username" inputType="text" />
-          <Input placeholderValue="Password" inputType="password" />
-          <Link to="dashboard" style={{ textDecoration: "none" }}>
-            <Button buttonText="SUBMIT" />
-          </Link>
         </div>
-      </div>
-    </nav>
-  );
+      </nav>
+    );
   }
 }
 

@@ -11,9 +11,7 @@ export default class Button extends React.Component {
     const { buttonText } = this.props;
     return (
       <div className="Button">
-        <button className="Button-buttonstyle">
-          {buttonText}
-        </button>
+        <button className="Button-buttonstyle">{buttonText}</button>
       </div>
     );
   }

@@ -8,11 +8,9 @@ export default class Input extends React.Component {
   }
 
   render() {
-    const { placeholderValue,inputType } = this.props;
+    const { placeholderValue, inputType } = this.props;
     return (
-      <div
-        className="Input"
-      >
+      <div className="Input">
         <input
           className="Input-inputstyle"
           type={inputType}

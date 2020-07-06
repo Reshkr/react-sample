@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import SideBar from "../../components/SideBar";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import "../../App.css";
+import bg5 from "../../images/bg5.jpg";
+import mike from "../../images/mike.jpg"
+import "./UserProfile.css";
 
 class UserProfile extends Component {
   render() {
@@ -17,24 +19,24 @@ class UserProfile extends Component {
               <div class="col-md-8">
                 <div class="card">
                   <div class="card-header">
-                    <h5 class="title">Edit Profile</h5>
+                    <h5 class="title1">Edit Profile</h5>
                   </div>
                   <div class="card-body">
                     <form>
                       <div class="row">
                         <div class="col-md-5 pr-1">
-                          <div class="form-group">
+                          <div class="form-group3">
                             <label>Company (disabled)</label>
                             <input
                               type="text"
-                              class="form-control"
+                              class="form-control3"
                               disabled=""
                               placeholder="Company"
                               value="Creative Code Inc."
                             />
                           </div>
                         </div>
-                        <div class="col-md-3 px-1">
+                        <div class="col-md-9 px-1">
                           <div class="form-group">
                             <label>Username</label>
                             <input
@@ -136,9 +138,9 @@ class UserProfile extends Component {
                             <textarea
                               rows="4"
                               cols="80"
-                              class="form-control"
+                              class="form-control2"
                               placeholder="Here can be your description"
-                              value="Mike"
+                             
                             >
                               Lamborghini Mercy, Your chick she so thirsty, I'm
                               in that two seat Lambo.
@@ -153,14 +155,14 @@ class UserProfile extends Component {
               <div class="col-md-4">
                 <div class="card card-user">
                   <div class="image">
-                    <img src="../../images/bg5.jpg" alt="..." />
+                    <img src={bg5} alt="..." />
                   </div>
                   <div class="card-body">
                     <div class="author">
                       <a href="#">
                         <img
                           class="avatar border-gray"
-                          src="../assets/images/mike.jpg"
+                          src={mike}
                           alt="..."
                         />
                         <h5 class="title">Mike Andrew</h5>

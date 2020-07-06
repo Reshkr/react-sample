@@ -17,7 +17,7 @@ class Typography extends Component {
               <div class="col-md-12">
                 <div class="card">
                   <div class="card-header">
-                    <h5 class="title">Now Ui Table Heading</h5>
+                    <h5 class="title1">Now Ui Table Heading</h5>
                     <p class="category">Created using Montserrat Font Family</p>
                   </div>
                   <div class="card-body">

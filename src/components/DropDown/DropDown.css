@@ -1,0 +1,65 @@
+.btn.btn-icon[class*="btn-outline-"], .navbar .navbar-nav>a.btn.btn-icon[class*="btn-outline-"] {
+  padding: 0 !important;
+}
+.btn.btn-icon, .navbar .navbar-nav>a.btn.btn-icon {
+  height: 2.375rem;
+  min-width: 2.375rem;
+  width: 2.375rem;
+  font-size: 0.9375rem;
+  overflow: hidden;
+  position: relative;
+  line-height: normal;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}
+.btn-round {
+  border-width: 1px;
+  border-radius: 30px;
+}
+[class*="btn-outline-"] {
+  border: 1px solid;
+  background-color: transparent;
+}
+.btn-outline-default {
+  color: #888;
+}
+.btn{
+  font-weight: 400;
+  display: inline-block;
+  text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.dropdown-toggle1 {
+  white-space: nowrap;
+}
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+button, input, optgroup, select, textarea {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+button, select {
+  text-transform: none;
+}
+button {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  align-items: flex-start;
+  font: 400 13.3333px Arial;
+}
+.btn.btn-icon:not(.btn-footer) .now-ui-icons{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12px, -12px);
+    line-height: 1.5626rem;
+    width: 24px;
+}
+  

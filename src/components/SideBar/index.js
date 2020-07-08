@@ -30,7 +30,7 @@ export default class SideBar extends Component {
           <ul className="nav">
             <li className="active">
               <Link to="dashboard" style={{ textDecoration: "none" }}>
-                <i className="now-ui-icons education_atom"></i>
+                <i className="now-ui-icons design_app"></i>
 
                 <p>Dashboard</p>
               </Link>

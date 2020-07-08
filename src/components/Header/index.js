@@ -32,7 +32,8 @@ export default class Header extends Component {
                 />
                 <div class="input-group-append">
                   <div class="input-group-text">
-                    <GoSearch />{" "}
+                    <i class="now-ui-icons ui-1_zoom-bold">
+                    </i>
                   </div>
                 </div>
               </div>
@@ -44,38 +45,6 @@ export default class Header extends Component {
                 </a>
               </li>
 
-              {/* <Dropdown>
-                <Dropdown.Toggle
-                  variant="success"
-                  id="dropdown-basic"
-                  style={{
-                    backgroundColor: "transparent",
-                    borderColor: "transparent",
-                    color: "white",
-                
-                  }}
-                >
-                   <GiWorld/>
-                  <MdArrowDropDown />
-                </Dropdown.Toggle>
-                <Dropdown.Menu
-                  style={{
-                      padding:10,
-                    backgroundColor: "white",
-                    display: "flex",
-                    flexDirection: "column",
-                    boxShadow:6
-                  }}
-                >
-                  <Dropdown.Item href="#/action-1" style={{color:'black'}}>Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2" style={{color:'black'}}>
-                    Another action
-                  </Dropdown.Item >
-                  <Dropdown.Item href="#/action-3" style={{color:'black'}}>
-                    Something else
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown> */}
               <li class="nav-item dropdown">
                 <Dropdown class="dropdown-menu dropdown-menu-right">
                   <Dropdown.Toggle

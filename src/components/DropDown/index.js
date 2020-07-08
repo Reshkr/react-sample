@@ -51,8 +51,8 @@ export default class DropDown extends React.Component {
             <Dropdown.Item href="#/action-3" style={{paddingLeft:15, color: "black" }}>
               Something else
             </Dropdown.Item>
-             <Dropdown.Item href="#/action-3" style={{ paddingLeft:15,color: "red" }}>
-              Something else
+             <Dropdown.Item href="#/action-4" style={{ paddingLeft:15,color: "red" }}>
+             Remove Data
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

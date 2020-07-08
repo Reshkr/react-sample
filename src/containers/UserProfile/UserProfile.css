@@ -442,29 +442,22 @@ hr {
 }
 .card-user .button-container {
   margin-bottom: 6px;
-  text-align: center;
-  
 }
 
-.btn.btn-icon.btn-lg,
-.navbar .navbar-nav > a.btn.btn-icon.btn-lg {
+.btn.btn-icon.btn-lg {
   height: 3.6rem;
   min-width: 3.6rem;
   width: 3.6rem;
   
 }
-.btn.btn-icon,
-.navbar .navbar-nav > a.btn.btn-icon {
+.btn.btn-icon{
   padding: 0;
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
   overflow: hidden;
   position: relative;
   line-height: normal;
   
 }
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled),
 button:not(:disabled) {
   cursor: pointer;
   
@@ -491,27 +484,11 @@ button:not(:disabled) {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     
 }
-button,
-input,
-optgroup,
-select,
-textarea {
+
+button {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-  
-}
-[type="button"],
-[type="reset"],
-[type="submit"],
-button {
-  -webkit-appearance: button;
-  
-}
-button,
-select {
   text-transform: none;
-  
-}
-button {
+  -webkit-appearance: button;
   -webkit-writing-mode: horizontal-tb !important;
   text-rendering: auto;
   letter-spacing: normal;
@@ -524,9 +501,6 @@ button {
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
-  
-}
-.fab {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-style: normal;

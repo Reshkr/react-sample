@@ -4,6 +4,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import bg5 from "../../images/bg5.jpg";
 import mike from "../../images/mike.jpg"
+import { TiSocialFacebook,TiSocialTwitter } from "react-icons/ti";
+import {AiOutlineGooglePlus} from "react-icons/ai";
 import "./UserProfile.css";
 
 class UserProfile extends Component {
@@ -175,25 +177,31 @@ class UserProfile extends Component {
                       I'm in that two seat Lambo"
                     </p>
                   </div>
-
+                  <hr></hr>
                   <div class="button-container">
                     <button
                       href="#"
                       class="btn btn-neutral btn-icon btn-round btn-lg"
                     >
-                      <i class="fab fa-facebook-f"></i>
+                      <div class="fab">
+                      <TiSocialFacebook />
+                      </div>
                     </button>
                     <button
                       href="#"
                       class="btn btn-neutral btn-icon btn-round btn-lg"
                     >
-                      <i class="fab fa-twitter"></i>
+                      <div class="fab">
+                        <TiSocialTwitter/>
+                      </div>
                     </button>
                     <button
                       href="#"
                       class="btn btn-neutral btn-icon btn-round btn-lg"
                     >
-                      <i class="fab fa-google-plus-g"></i>
+                      <div class="fab">
+                        <AiOutlineGooglePlus/>
+                      </div>
                     </button>
                   </div>
                 </div>

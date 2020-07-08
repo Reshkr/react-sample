@@ -19,7 +19,19 @@ class DashBoard extends Component {
           <Header headerText="Dashboard" />
           <SideBar />
         
-          <div class="panel-header panel-header-sm"></div>
+          <div class="panel-header panel-header-sm">
+          <div class="chartjs-size-monitor" class=".chartStyle">
+          <div class="chartjs-size-monitor-expand" class="chartStyle2">
+            <div class="chartStyle3">
+              </div>
+              </div>
+              <div class="chartjs-size-monitor-shrink" class="chartStyle4">
+                <div class="chartStyle5">
+                  </div>
+                  </div>
+                  </div>
+
+          </div>
           <div class="content">
         <div class="row">
           <div class="col-lg-4">
